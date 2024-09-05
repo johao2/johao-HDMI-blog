@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Música</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #fff;
+            background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ee219434-7993-43a9-98d6-238ee165ae53/dft0l9l-2db20585-71c0-4fae-84ce-05501ce2c766.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2VlMjE5NDM0LTc5OTMtNDNhOS05OGQ2LTIzOGVlMTY1YWU1M1wvZGZ0MGw5bC0yZGIyMDU4NS03MWMwLTRmYWUtODRjZS0wNTUwMWNlMmM3NjYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.KkaAkFF0C6eWl_i6A6DfHtn2nhxg6dXoQDRq2WnTU-g'); 
+            background-size: cover; 
+            background-position: center; 
+            background-attachment: fixed; 
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 20px;
+            font-size: 2.5em;
+            color: #e0e0e0; 
+        }
+
+        h2 {
+            font-size: 1.6em;
+            margin: 15px 0;
+            color: #f5f5f5; 
+        }
+
+        .video-container {
+            max-width: 100%;
+            margin: 20px auto;
+            border-radius: 10px;
+            overflow: hidden;
+            background: rgba(0, 0, 0, 0.7); 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); 
+        }
+
+        iframe {
+            width: 100%;
+            height: 315px;
+        }
+
+        .video-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px; 
+            max-width: 1200px; 
+            margin: 20px auto; 
+        }
+
+        .video-item {
+            flex: 1 1 calc(50% - 20px); 
+            margin: 10px; 
+            max-width: 560px; 
+        }
+
+        nav {
+            margin: 20px 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+            margin: 0 15px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mis Videos Musicales Favoritos</h1>
+
+    <div class="video-grid">
+        <div class="video-item">
+            <h2>Video 1</h2>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/iKQzkXJXEaM" title="Suzume no tojimari; Theme song (Sub Español + Romaji)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="video-item">
+            <h2>Video 2</h2>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/qal34e9v_pk?si=RL3iDC65Db-qc_aL&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="video-item">
+            <h2>Video 3</h2>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/EKkzbbLYPuI?si=6kt8MvRi31WrOsBb&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="video-item">
+            <h2>Video 4</h2>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/WXwgZL4zx9o?si=1QrPEHKAritjbggR&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="video-item">
+            <h2>Video 5</h2>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/-OJSZLHTk-8?si=l7VRxsodUiuE23Ra&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <nav>
+        <a href="biografia.html">Biografía</a> | 
+        <a href="presentacion.html">Presentación</a> | 
+        <a href="musica.html">Mi Música</a>
+    </nav>
+</body>
+</html>
